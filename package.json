@@ -1,0 +1,16 @@
+{
+	"name": "node-friends-api",
+	"main": "server.js",
+	"dependencies": {
+		"express": "~4.16.3",
+		"body-parser": "~1.18.3",
+		"mysql": "~2.15.0",
+		"method-override": "~3.0.0"
+	},
+	"license": "MIT",
+	"description": "Friends REST Application witn MySQL",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/arias-spu/friends-app.git"
+	}
+}
