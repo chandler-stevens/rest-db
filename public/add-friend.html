@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Carlos Arias">
+		<title>Add a Friend</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<h2>Add a Friend</h2>
+			<div class="form-group">
+				<form id="example" action="api/friends" method="POST">
+					<div class="form-title">
+						<h4>Friend Information (* denotes required field)</h4>
+					</div>
+					<hr />
+					<div class="form-group">
+						<label class="field-label" for="birthDate">Birth Date *</label>
+						<input class="form-control" type="date" id="birthDate" name="birthDate" value="2000-01-01" required >
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="firstName">First Name *</label>
+						<input class="form-control" placeholder="First Name" type="text" id="firstName" name="firstName" required >
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="lastName">Last Name *</label>
+						<input class="form-control" placeholder="Last Name" type="text" id="lastName" name="lastName" required >
+						<span class="validity"></span>
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="gender">Gender</label>
+						<select class="form-control" id="gender" name="gender">
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label class="field-label" for="phone">Phone</label>
+						<input type="tel" class="form-control" placeholder="###-###-####" name="phone" id="phone" name="phone">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="reset" class="btn btn-secondary">Reset</button>
+				</form>
+			</div>
+			<div id="output">
+			</div>
+		</div>
+	</body>
+</html>
